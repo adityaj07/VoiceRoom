@@ -1,0 +1,24 @@
+.button {
+  background: #9c34c2;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.5;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: #25d366;
+}
+
+.arrow {
+  margin-left: 10px;
+}

@@ -1,0 +1,24 @@
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.actionButtonWrap {
+  margin-top: 30px;
+}
+
+.paragraph {
+  font-size: 12px;
+  font-weight: normal;
+  color: #c4c5c5;
+  opacity: 0.8;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.paragraphWrapper {
+  max-width: 70%;
+  margin: 0px auto;
+}
