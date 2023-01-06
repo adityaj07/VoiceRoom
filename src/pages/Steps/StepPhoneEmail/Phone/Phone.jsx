@@ -7,6 +7,11 @@ import styles from "../StepPhoneEmail.module.css";
 const Phone = ({ onNext }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
+  function submit() {
+    //server request
+    onNext();
+  }
+
   return (
     <Card title="Enter your phone number" icon="phone">
       {
@@ -20,7 +25,7 @@ const Phone = ({ onNext }) => {
       />
       <div>
         <div className={styles.actionButtonWrap}>
-          <Button text="Next" onClick={onNext} />
+          <Button text="Next" onClick={submit} />
         </div>
       </div>
       <div className={styles.paragraphWrapper}>
