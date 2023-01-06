@@ -1,0 +1,15 @@
+//This service is for hashing the otp
+const crypto = require("crypto");
+
+class HashService {
+  hashOtp(data) {
+    //crypto.createHmac(algorithm, key[, options])
+    const hash = crypto
+      .createHmac("sha256", process.env.HASH_SECRET)
+      .update(data)
+      .digest("hex");
+    return hash;
+  }
+}
+
+module.exports = new HashService();
